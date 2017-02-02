@@ -17,7 +17,34 @@
 ##  along with this program; if not, write to the Free Software
 ##  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
+lib_LIBRARIES = libpar2.a
 bin_PROGRAMS = par2
+
+libpar2_a_SOURCES = libpar2.cpp libpar2.h par2cmdline.h \
+	commandline.cpp commandline.h \
+	crc.cpp crc.h \
+	creatorpacket.cpp creatorpacket.h \
+	criticalpacket.cpp criticalpacket.h \
+	datablock.cpp datablock.h \
+	descriptionpacket.cpp descriptionpacket.h \
+	diskfile.cpp diskfile.h \
+	filechecksummer.cpp filechecksummer.h \
+	galois.cpp galois.h \
+	letype.h \
+	mainpacket.cpp mainpacket.h \
+	md5.cpp md5.h \
+	par1fileformat.cpp par1fileformat.h \
+	par1repairer.cpp par1repairer.h \
+	par1repairersourcefile.cpp par1repairersourcefile.h \
+	par2creator.cpp par2creator.h \
+	par2creatorsourcefile.cpp par2creatorsourcefile.h \
+	par2fileformat.cpp par2fileformat.h \
+	par2repairer.cpp par2repairer.h \
+	par2repairersourcefile.cpp par2repairersourcefile.h \
+	recoverypacket.cpp recoverypacket.h \
+	reedsolomon.cpp reedsolomon.h \
+	verificationhashtable.cpp verificationhashtable.h \
+	verificationpacket.cpp verificationpacket.h
 
 par2_SOURCES = par2cmdline.cpp par2cmdline.h \
 	commandline.cpp commandline.h \

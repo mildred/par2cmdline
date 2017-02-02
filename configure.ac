@@ -31,6 +31,7 @@ AM_INIT_AUTOMAKE
 
 dnl Checks for programs.
 AC_PROG_CXX
+AC_PROG_RANLIB
 AC_PROG_INSTALL
 
 dnl Checks for libraries.
